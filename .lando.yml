@@ -1,0 +1,25 @@
+name: craftcodepuntbe
+recipe: wordpress
+config:
+  webroot: ./web
+  php: '8.2'
+
+tooling:
+  npm:
+    service: appserver
+    cmd: npm
+  vite:
+    service: appserver
+    cmd: npm run dev -- --host
+
+services:
+  appserver:
+    type: php:8.2
+    build_as_root:
+      - curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
+      - apt-get install -y nodejs
+
+proxy:
+  appserver:
+    - craftcodepuntbe.lndo.site
+
