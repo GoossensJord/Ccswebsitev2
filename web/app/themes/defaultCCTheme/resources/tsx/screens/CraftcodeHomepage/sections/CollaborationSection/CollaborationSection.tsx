@@ -8,7 +8,7 @@ export const CollaborationSection = () => {
           Trusted by leading companies
         </h2>
 
-        <p className="text-center max-w-[844px] mx-auto [font-family:'Lexend',Helvetica] font-normal text-[#010326cc] text-lg tracking-[0] leading-8 mb-16">
+        <p className="text-center mx-auto [font-family:'Lexend',Helvetica] font-normal text-[#010326cc] text-lg tracking-[0] leading-8 mb-16">
           We are proud to have worked with leading names in various industries
           across Belgium and beyond, helping them navigate and master their
           digital transformation journey.

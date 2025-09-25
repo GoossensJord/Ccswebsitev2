@@ -14,6 +14,8 @@ import RightTopCodeEditor from './components/RightCodeEditor';
 import { JavaCodeEditor } from './components/JavaCodeEditor';
 import { SolutionsSection } from './components/SolutionsSection';
 import { TerminalWindow } from './components/TerminalWindow';
+import { CallToActionHero } from './components/CallToActionHero';
+import { ServicesSection } from './components/ServicesSection';
 
 const navigationItems = [
   { label: 'What we do', hasDropdown: true },
@@ -125,75 +127,14 @@ export const CraftcodeHomepage = (): JSX.Element => {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="bg-white py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Left Column */}
-            <div>
-              <p className="text-blue-600 font-medium mb-4">What we do</p>
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                Our services, <br />
-                your success
-              </h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                At CraftCode, we excel in crafting clean, efficient code that
-                drives your business forward. Our craftsmanship sets the
-                standard for quality, ensuring that your digital vision is not
-                only realized but built to the highest standards.
-              </p>
-            </div>
-
-            {/* Right Column */}
-            <div className="bg-gray-50 rounded-2xl p-8">
-              <div className="flex items-center space-x-4 mb-6">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                  <div className="w-6 h-6 text-blue-600">💻</div>
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900">
-                  Developer as a Service
-                </h3>
-              </div>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                Our developers go beyond coding. They think with you and
-                strengthen your team exactly when you need it.
-              </p>
-              <button className="text-blue-600 font-medium hover:text-blue-700 transition-colors">
-                Learn More →
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ServicesSection />
 
       <SolutionsSection />
 
-      {/* Collaboration Section */}
-      <section className="relative bg-[#002266] rounded-[20px_20px_60px_20px] mx-4 py-24">
-        <img
-          className="absolute inset-0 w-full h-full object-cover rounded-[20px_20px_60px_20px]"
-          alt="Mask group"
-          src="/app/themes/defaultCCTheme/resources/images/mask-group.png"
-        />
-        <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-            Your idea. Our code. <br />
-            Endless possibilities
-          </h2>
-          <p className="text-lg text-white/80 text-center leading-8 mb-8 max-w-2xl mx-auto">
-            From concept to impactful solution, we're here to build with you.
-            <br />
-            What's our next challenge together?
-          </p>
-          <Button className="bg-[#0156ff] hover:bg-[#0156ff]/90 text-white px-8 py-4 text-lg font-medium rounded-lg">
-            Let's connect
-          </Button>
-        </div>
-      </section>
+      <CallToActionHero />
+
       <ProjectShowcaseSection />
-
       <CollaborationSection />
-
       <ImpactHighlightSection />
       <InsightsSection />
     </div>

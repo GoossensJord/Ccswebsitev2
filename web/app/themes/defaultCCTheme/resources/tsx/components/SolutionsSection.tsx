@@ -34,13 +34,14 @@ export const SolutionsSection = (): JSX.Element => {
   return (
     <section className="py-20">
       <div className="max-w-7xl mx-auto px-6">
-
         <div className="text-center mb-16">
-          <p className="text-blue-600 font-medium mb-4">Our solutions</p>
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Clean code, Real impact
-          </h2>
-          <p className="max-w-4xl mx-auto text-lg text-gray-600 leading-relaxed text-center">
+          <div>
+            <p className="text-blue-600 font-medium mb-2">Our solutions</p>
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              Clean code, Real impact
+            </h2>
+          </div>
+          <p className="mx-auto text-lg text-gray-600 leading-relaxed text-center">
             We take pride in adapting to your needs with clean, scalable
             solutions. From architecture to front-end and back-end development,
             we build what works best for you using technologies that fit,

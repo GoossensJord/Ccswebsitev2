@@ -46,7 +46,7 @@ export default defineConfig({
       interval: 1000,
     },
     hmr: {
-      host: 'localhost',
+      host: '127.0.0.1',
       port: 5173,
     },
     origin: 'http://craftcodepuntbe.lndo.site:5173',

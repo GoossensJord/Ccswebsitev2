@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardContent } from "../../../../components/ui/card";
+import { JSX } from "react/jsx-runtime";
 
 export const ProjectShowcaseSection = (): JSX.Element => {
   return (
@@ -10,7 +11,7 @@ export const ProjectShowcaseSection = (): JSX.Element => {
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             Proven craftsmanship, real outcomes
           </h2>
-          <p className="max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed">
+          <p className="mx-auto text-lg text-gray-600 leading-relaxed">
             We focus on people, fit, and craft. From architecture to front-end and back-end,<br/> we build what servers your goals and users best
           </p>
         </div>
