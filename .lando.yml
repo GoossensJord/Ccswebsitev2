@@ -3,6 +3,11 @@ recipe: wordpress
 config:
   webroot: ./web
   php: '8.2'
+  environment:
+    MYSQL_DATABASE: wordpress
+    MYSQL_USER: wordpress
+    MYSQL_PASSWORD: wordpress
+    MYSQL_ROOT_PASSWORD: rootpassword
 
 tooling:
   npm:

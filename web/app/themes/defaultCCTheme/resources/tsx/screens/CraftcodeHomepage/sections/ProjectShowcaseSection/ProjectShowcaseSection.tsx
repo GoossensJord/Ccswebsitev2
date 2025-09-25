@@ -8,11 +8,10 @@ export const ProjectShowcaseSection = (): JSX.Element => {
         <div className="text-center mb-16">
           <p className="text-blue-600 font-medium mb-4">Client Success Stories</p>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Projects that make a difference
+            Proven craftsmanship, real outcomes
           </h2>
           <p className="max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed">
-            See how we've helped organizations transform their digital landscape
-            with clean code and strategic thinking.
+            We focus on people, fit, and craft. From architecture to front-end and back-end,<br/> we build what servers your goals and users best
           </p>
         </div>
 
