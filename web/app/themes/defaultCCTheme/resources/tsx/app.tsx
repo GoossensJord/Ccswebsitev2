@@ -12,39 +12,14 @@ import { Card, CardContent } from './components/ui/card';
 import { Button } from './components/ui/button';
 import RightTopCodeEditor from './components/RightCodeEditor';
 import { JavaCodeEditor } from './components/JavaCodeEditor';
+import { SolutionsSection } from './components/SolutionsSection';
+import { TerminalWindow } from './components/TerminalWindow';
 
 const navigationItems = [
   { label: 'What we do', hasDropdown: true },
   { label: 'Solutions', hasDropdown: true },
   { label: 'About Us', hasDropdown: false },
   { label: 'Careers', hasDropdown: false, isActive: true },
-];
-
-const solutionCards = [
-  {
-    title: 'Architecture',
-    description:
-      'We design solid foundations that grow with your ambitions. Clear, maintainable and ready for the future.',
-    className: 'rounded-[40px_20px_20px_20px]',
-  },
-  {
-    title: 'Front-end Development',
-    description:
-      "We craft user interfaces that don't just look good but feel intuitive and responsive. Whether it's a web app, dashboard or customer portal, our front-end developers ensure smooth interactions, accessible experiences and high performance across all devices.",
-    className: 'rounded-[20px]',
-  },
-  {
-    title: 'Back-end Development',
-    description:
-      "Behind every great interface is a solid engine. Our back-end experts build scalable, secure and future-ready systems that handle complex logic and data with ease. We focus on clean architecture, smart integrations and code that's built to last.",
-    className: 'rounded-[20px]',
-  },
-  {
-    title: 'Integration',
-    description:
-      'We connect systems in ways that just work. Smooth, safe and without the usual hassle.',
-    className: 'rounded-[20px_20px_40px_20px]',
-  },
 ];
 
 const collaborationFeatures = [
@@ -138,40 +113,7 @@ export const CraftcodeHomepage = (): JSX.Element => {
             <RightTopCodeEditor />
 
             {/* Terminal Window - Right side */}
-            <div className="absolute right-8 lg:right-24 bottom-32 lg:bottom-40 w-80 lg:w-96 bg-gray-900 rounded-lg shadow-2xl rotate-1 z-20">
-              <div className="bg-gray-800 px-4 py-2 border-b border-gray-700 rounded-t-lg">
-                <div className="flex items-center space-x-2">
-                  <div className="flex space-x-1">
-                    <div className="w-2.5 h-2.5 bg-red-400 rounded-full"></div>
-                    <div className="w-2.5 h-2.5 bg-yellow-400 rounded-full"></div>
-                    <div className="w-2.5 h-2.5 bg-green-400 rounded-full"></div>
-                  </div>
-                  <span className="text-xs text-gray-300 ml-2">zsh</span>
-                </div>
-              </div>
-              <div className="p-4 font-mono text-xs text-green-400 bg-gray-900">
-                <div>$ npm run dev</div>
-                <div className="text-gray-400 mt-1">
-                  <span className="text-green-400">{'✓'}</span> Build successful
-                  (2.1s)
-                </div>
-                <div className="text-gray-400">
-                  <span className="text-green-400">{'✓'}</span> Server on :3000
-                </div>
-                <div className="mt-1 text-gray-400">
-                  <span className="text-green-400">{'✓'}</span> Ready
-                </div>
-                <div className="text-gray-400">
-                  <span className="text-green-400">{'✓'}</span> Tests passed
-                </div>
-                <div className="text-gray-400">
-                  <span className="text-green-400">{'✓'}</span> Hot reloaded
-                </div>
-                <div className="mt-2 text-green-400">
-                  $<span className="animate-pulse">{'_'}</span>
-                </div>
-              </div>
-            </div>
+            <TerminalWindow className="right-8 lg:right-24 bottom-32 lg:bottom-40" />
 
             {/* Background decorative image */}
             <img
@@ -224,157 +166,7 @@ export const CraftcodeHomepage = (): JSX.Element => {
         </div>
       </section>
 
-      {/* Clean Code Section */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <p className="text-blue-600 font-medium mb-4">Our solutions</p>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Clean code, Real impact
-            </h2>
-            <p className="max-w-4xl mx-auto text-lg text-gray-600 leading-relaxed text-center">
-              We take pride in adapting to your needs with clean, scalable
-              solutions. From architecture to front-end and back-end
-              development, we build what works best for you using technologies
-              that fit, without being tied to any one framework.
-            </p>
-          </div>
-
-          {/* Solutions Grid */}
-          <div className="grid grid-cols-4 gap-8">
-            {/* First Row: Architecture (1 col) + Front-end Development (3 cols) */}
-            <Card
-              className={cn(
-                'bg-gray-50 border border-solid border-[#f0f2f2] p-8',
-                solutionCards[0].className
-              )}
-            >
-              <CardContent className="p-0">
-                <img
-                  className="w-full h-[212px] mb-8 object-cover"
-                  alt="Architecture"
-                  src="/app/themes/defaultCCTheme/resources/images/group-1000005876.png"
-                />
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  {solutionCards[0].title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {solutionCards[0].description}
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gray-50 border border-solid border-[#f0f2f2] p-8 rounded-[20px] col-span-3">
-              <CardContent className="p-0">
-                <img
-                  className="w-full h-[275px] mb-8 object-cover"
-                  alt="Front-end Development"
-                  src="/app/themes/defaultCCTheme/resources/images/frame-73.svg"
-                />
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  {solutionCards[1].title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {solutionCards[1].description}
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Second Row: Back-end Development (3 cols) + Integration (1 col) */}
-            <Card className="bg-gray-50 border border-solid border-[#f0f2f2] p-8 rounded-[20px] col-span-3 relative">
-              <CardContent className="p-0">
-                {/* Overlapping Code Windows */}
-                <div className="relative mb-8 h-[280px]">
-                  {/* Java Code Editor - Front, slightly rotated left */}
-                  <JavaCodeEditor className="left-0 top-0 transform z-20" />
-
-                  {/* Terminal Window - Behind, overlapping, slightly rotated right */}
-                  <div className="absolute left-24 top-12 w-[357px] h-[241px] bg-white rounded-lg shadow-xl border border-gray-200 transform rotate-1 z-10">
-                    <div className="flex items-start bg-gray-100 border-b border-gray-200 rounded-t-lg">
-                      <div className="inline-flex items-center gap-2 px-3 py-[11px] rounded-[10px_0px_0px_0px]">
-                        <div className="inline-flex items-center gap-1.5">
-                          <div className="w-2 h-2 bg-red-400 rounded-full" />
-                          <div className="w-2 h-2 bg-yellow-400 rounded-full" />
-                          <div className="w-2 h-2 bg-green-400 rounded-full" />
-                        </div>
-                      </div>
-                      <div className="inline-flex items-center gap-2 px-3 py-[11px]">
-                        <div className="text-xs text-gray-600 font-medium">
-                          zsh.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="p-4 bg-white font-mono text-xs leading-relaxed">
-                      <div className="text-gray-800">
-                        local@MacBook %{' '}
-                        <span className="text-blue-600">
-                          ./mvnw spring-boot:run
-                        </span>
-                      </div>
-                      <div className="text-gray-600 mt-1">
-                        <span className="text-green-600">✔</span> Dependencies
-                        resolved
-                      </div>
-                      <div className="text-gray-600">
-                        <span className="text-green-600">✔</span> Build
-                        successful (14s)
-                      </div>
-                      <div className="text-gray-600">
-                        <span className="text-blue-600">[craftcode-demo]</span>{' '}
-                        Booting backend...
-                      </div>
-                      <div className="text-gray-600">
-                        <span className="text-green-600">☑</span> Database
-                        connected
-                      </div>
-                      <div className="text-gray-600">
-                        <span className="text-green-600">☑</span> Flyway
-                        migrations: 3 applied
-                      </div>
-                      <div className="text-gray-600">
-                        <span className="text-green-600">☑</span> HTTP server
-                        started on :8080
-                      </div>
-                      <div className="text-gray-600 mt-1">
-                        <span className="text-green-600">[READY]</span>{' '}
-                        Craftcode backend is up{' '}
-                        <span className="text-green-600">✔</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Text Content */}
-                <div className="mt-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    {solutionCards[2].title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {solutionCards[2].description}
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gray-50 border border-solid border-[#f0f2f2] p-8 rounded-[20px_20px_40px_20px]">
-              <CardContent className="p-0">
-                <img
-                  className="w-full h-[212px] mb-8 object-cover"
-                  alt="Integration"
-                  src="/app/themes/defaultCCTheme/resources/images/group-1000005874.png"
-                />
-
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  {solutionCards[3].title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {solutionCards[3].description}
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+      <SolutionsSection />
 
       {/* Collaboration Section */}
       <section className="relative bg-[#002266] rounded-[20px_20px_60px_20px] mx-4 py-24">

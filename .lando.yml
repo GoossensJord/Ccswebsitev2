@@ -18,6 +18,9 @@ tooling:
     cmd: npm run dev -- --host
 
 services:
+  myservice:
+    type: phpmyadmin:5.2
+    
   appserver:
     type: php:8.2
     build_as_root:
