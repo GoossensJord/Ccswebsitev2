@@ -41,11 +41,9 @@ export const FooterSection = () => {
 
   return (
     <section className="relative w-full">
-      <div className="relative bg-gray-50 rounded-[20px] border border-solid border-[#f0f2f2] pt-[133px] pb-[150px]">
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-[1406px] h-[285px] bg-[#131e32] rounded-[20px]" />
-        
+      <div className="relative bg-gray-50 rounded-[20px] border border-solid border-[#f0f2f2] pt-[60px] pb-[150px]">
         <div className="relative z-10 max-w-[1406px] mx-auto px-4">
-          <div className="grid grid-cols-5 gap-8 mb-[326px] mt-[222px]">
+          <div className="grid grid-cols-5 gap-8 mb-[326px]">
             {footerColumns.map((column, index) => (
               <div key={index} className="flex flex-col items-start gap-2">
                 <div className="[font-family:'Lexend',Helvetica] font-medium text-[#01032699] text-xs tracking-[0] leading-7">
@@ -64,6 +62,26 @@ export const FooterSection = () => {
               </div>
             ))}
           </div>
+        </div>
+      </div>
+      
+      {/* Dark Footer Bar - Full Width */}
+      <div className="w-full h-[80px] bg-[#131e32] flex items-center justify-between px-[87px]">
+        {/* Left side - Logo and Copyright */}
+        <div className="flex items-center gap-[76px]">
+          <img
+            className="w-[132px] h-7"
+            alt="CraftCode Logo"
+            src="/app/themes/defaultCCTheme/resources/images/logo-color-2.png"
+          />
+          <div className="[font-family:'Lexend',Helvetica] font-normal text-sm text-white tracking-[0] leading-7">
+            Copyright © 2025 | All rights reserved | Part of the Fieldside group
+          </div>
+        </div>
+        
+        {/* Right side - Privacy Links */}
+        <div className="[font-family:'Lexend',Helvetica] font-normal text-sm text-white tracking-[0] leading-7">
+          Privacy statement | Cookie policy
         </div>
       </div>
     </section>
