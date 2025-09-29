@@ -1,26 +1,52 @@
 import React, { JSX } from 'react';
 import { Button } from './ui/button';
+import { createTextStyle, editableStyles } from '../config/editable-styles';
 
 export const CallToActionHero = (): JSX.Element => {
+  // Define reusable styles
+  const titleStyle = createTextStyle('h2');
+  const bodyStyle = createTextStyle('body');
+  const buttonTextStyle = createTextStyle('small');
+
   return (
-    <section className="relative bg-[#002266] rounded-[20px_20px_60px_20px] mx-4 py-24">
+    <section className="relative rounded-[20px_20px_60px_20px]" 
+             style={{
+               backgroundColor: editableStyles.colors.brand.accent,
+               margin: `0 ${editableStyles.layout.containerPadding}`,
+               padding: `${editableStyles.spacing.sections.large} 0`
+             }}>
       <img
         className="absolute inset-0 w-full h-full object-cover rounded-[20px_20px_60px_20px]"
         alt="Mask group"
         src="/app/themes/defaultCCTheme/resources/images/mask-group.png"
       />
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
-        <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+      <div className="relative z-10 text-center mx-auto" 
+           style={{
+             maxWidth: '896px',
+             padding: `0 ${editableStyles.layout.containerPadding}`
+           }}>
+        <h2 style={{...titleStyle, color: 'white', marginBottom: editableStyles.spacing.components.loose}} className="lg:text-5xl">
           Your idea. Our code. <br />
           Endless possibilities
         </h2>
-        <p className="text-lg text-white/80 text-center leading-8 mb-8 mx-auto">
+        <p style={{
+          ...bodyStyle,
+          color: 'rgba(255, 255, 255, 0.8)',
+          textAlign: 'center',
+          marginBottom: editableStyles.layout.gridGap.large,
+          margin: '0 auto'
+        }}>
           From concept to impactful solution, we're here to build with you.
           <br />
           What's our next challenge together?
         </p>
-        <Button className="bg-[#0156ff] hover:bg-[#0156ff]/90 text-white px-8 py-4 text-lg font-medium rounded-lg">
-          Let's connect
+        <Button className="hover:bg-[#0156ff]/90 rounded-lg" 
+                style={{
+                  backgroundColor: editableStyles.colors.brand.primary,
+                  color: 'white',
+                  padding: editableStyles.components.buttons.primary.padding
+                }}>
+          <span style={buttonTextStyle}>Let's connect</span>
         </Button>
       </div>
     </section>

@@ -1,18 +1,26 @@
 import React, { JSX } from 'react';
+import { createTextStyle, editableStyles } from '../config/editable-styles';
 
 export const ServicesSection = (): JSX.Element => {
+  // Define reusable styles
+  const subtitleStyle = createTextStyle('small');
+  const titleStyle = createTextStyle('h2');
+  const bodyStyle = createTextStyle('body');
+  const cardTitleStyle = createTextStyle('h3');
+  const cardBodyStyle = createTextStyle('body');
+
   return (
-    <section className="bg-white py-20">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <section style={{backgroundColor: 'white', padding: `${editableStyles.spacing.sections.large} 0`}}>
+      <div className="mx-auto" style={{maxWidth: editableStyles.layout.maxWidth, padding: `0 ${editableStyles.layout.containerPadding}`}}>
+        <div className="grid lg:grid-cols-2 items-center" style={{gap: editableStyles.layout.gridGap.large}}>
           {/* Left Column */}
           <div>
-            <p className="text-blue-600 font-medium mb-4">What we do</p>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            <p style={{...subtitleStyle, color: editableStyles.colors.brand.primary, marginBottom: editableStyles.spacing.components.normal}}>What we do</p>
+            <h2 style={{...titleStyle, marginBottom: editableStyles.spacing.components.loose}} className="lg:text-5xl">
               Our services, <br />
               your success
             </h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p style={bodyStyle}>
               At CraftCode, we excel in crafting clean, efficient code that
               drives your business forward. Our craftsmanship sets the standard
               for quality, ensuring that your digital vision is not only
@@ -21,20 +29,23 @@ export const ServicesSection = (): JSX.Element => {
           </div>
 
           {/* Right Column */}
-          <div className="bg-gray-50 rounded-2xl p-8">
-            <div className="flex items-center space-x-4 mb-6">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                <div className="w-6 h-6 text-blue-600">💻</div>
+          <div className="rounded-2xl" style={{
+            backgroundColor: editableStyles.colors.backgrounds.light,
+            padding: editableStyles.layout.gridGap.large
+          }}>
+            <div className="flex items-center mb-6" style={{gap: editableStyles.spacing.components.normal}}>
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center" style={{backgroundColor: `${editableStyles.colors.brand.primary}20`}}>
+                <div className="w-6 h-6" style={{color: editableStyles.colors.brand.primary}}>💻</div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900">
+              <h3 style={cardTitleStyle}>
                 Developer as a Service
               </h3>
             </div>
-            <p className="text-gray-600 mb-6 leading-relaxed">
+            <p style={{...cardBodyStyle, marginBottom: editableStyles.spacing.components.loose}}>
               Our developers go beyond coding. They think with you and
               strengthen your team exactly when you need it.
             </p>
-            <button className="text-blue-600 font-medium hover:text-blue-700 transition-colors">
+            <button className="font-medium hover:opacity-75 transition-colors" style={{color: editableStyles.colors.brand.primary}}>
               Learn More →
             </button>
           </div>

@@ -2,6 +2,7 @@ import React, { JSX } from 'react';
 import { cn } from '../lib/utils';
 import { Card, CardContent } from './ui/card';
 import { JavaCodeEditor } from './JavaCodeEditor';
+import { createTextStyle, editableStyles } from '../config/editable-styles';
 
 const solutionCards = [
   {
@@ -31,17 +32,24 @@ const solutionCards = [
 ];
 
 export const SolutionsSection = (): JSX.Element => {
+  // Define reusable styles
+  const subtitleStyle = createTextStyle('small');
+  const titleStyle = createTextStyle('h2');
+  const bodyStyle = createTextStyle('body');
+  const cardTitleStyle = createTextStyle('h4');
+  const cardDescriptionStyle = createTextStyle('small');
+
   return (
-    <section className="py-20">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
+    <section style={{padding: `${editableStyles.spacing.sections.large} 0`}}>
+      <div className="mx-auto" style={{maxWidth: editableStyles.layout.maxWidth, padding: `0 ${editableStyles.layout.containerPadding}`}}>
+        <div className="text-center" style={{marginBottom: editableStyles.spacing.sections.medium}}>
           <div>
-            <p className="text-blue-600 font-medium mb-2">Our solutions</p>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            <p style={{...subtitleStyle, color: editableStyles.colors.brand.primary, marginBottom: editableStyles.spacing.components.tight}}>Our solutions</p>
+            <h2 style={{...titleStyle, marginBottom: editableStyles.spacing.components.loose}} className="lg:text-5xl">
               Clean code, Real impact
             </h2>
           </div>
-          <p className="mx-auto text-lg text-gray-600 leading-relaxed text-center">
+          <p style={{...bodyStyle, margin: '0 auto', textAlign: 'center'}}>
             We take pride in adapting to your needs with clean, scalable
             solutions. From architecture to front-end and back-end development,
             we build what works best for you using technologies that fit,

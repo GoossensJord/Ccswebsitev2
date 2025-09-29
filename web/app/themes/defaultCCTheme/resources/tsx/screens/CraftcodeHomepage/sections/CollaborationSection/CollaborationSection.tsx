@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardContent } from '../../../../components/ui/card';
 import { Button } from '../../../../components/ui/button';
+import { createTextStyle, editableStyles } from '../../../../config/editable-styles';
 
 const collaborationFeatures = [
   {
@@ -26,21 +27,28 @@ const collaborationFeatures = [
 ];
 
 export const CollaborationSection = () => {
+  // Define reusable styles
+  const subtitleStyle = createTextStyle('small');
+  const titleStyle = createTextStyle('h2');
+  const bodyStyle = createTextStyle('body');
+  const cardTitleStyle = createTextStyle('h4');
+  const cardDescriptionStyle = createTextStyle('small');
+
   return (
-    <section className="py-20">
-      <div className="max-w-7xl mx-auto px-6">
+    <section style={{padding: `${editableStyles.spacing.sections.large} 0`}}>
+      <div className="mx-auto" style={{maxWidth: editableStyles.layout.maxWidth, padding: `0 ${editableStyles.layout.containerPadding}`}}>
         {/* Two Column Layout: Content on Left, Decorative on Right */}
-        <div className="grid grid-cols-2 gap-16 items-start">
+        <div className="grid grid-cols-2 items-start" style={{gap: editableStyles.layout.gridGap.large}}>
           {/* Left Column - Content and Features */}
           <div>
             {/* Content Section */}
-            <div className="mb-12">
-              <p className="text-blue-600 font-medium mb-4">Why Craftcode</p>
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            <div style={{marginBottom: editableStyles.spacing.sections.medium}}>
+              <p style={{...subtitleStyle, color: editableStyles.colors.brand.primary, marginBottom: editableStyles.spacing.components.normal}}>Why Craftcode</p>
+              <h2 style={{...titleStyle, marginBottom: editableStyles.spacing.components.loose}} className="lg:text-5xl">
                 Turn your vision <br />
                 into reliable code
               </h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p style={bodyStyle}>
                 We match the right people to your context, align on outcomes and
                 build maintainable systems.
               </p>

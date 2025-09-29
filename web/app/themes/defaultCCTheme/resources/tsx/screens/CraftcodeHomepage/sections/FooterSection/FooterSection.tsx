@@ -1,5 +1,5 @@
 import React, { JSX } from "react";
-
+import { createTextStyle, editableStyles } from "../../../../config/editable-styles";
 
 export const FooterSection = () => {
   const footerColumns = [
@@ -39,21 +39,45 @@ export const FooterSection = () => {
     },
   ];
 
+  // Define reusable styles
+  const titleStyle = createTextStyle('small');
+  const linkStyle = createTextStyle('small');
+  const copyrightStyle = createTextStyle('small');
+
   return (
     <section className="relative w-full">
-      <div className="relative bg-gray-50 rounded-[20px] border border-solid border-[#f0f2f2] pt-[60px] pb-[150px]">
-        <div className="relative z-10 max-w-[1406px] mx-auto px-4">
-          <div className="grid grid-cols-5 gap-8 mb-[326px]">
+      <div className="relative rounded-[20px] border border-solid" 
+           style={{
+             backgroundColor: editableStyles.colors.backgrounds.light,
+             borderColor: editableStyles.colors.borders.light,
+             paddingTop: editableStyles.spacing.sections.small,
+             paddingBottom: '150px'
+           }}>
+        <div className="relative z-10 mx-auto" 
+             style={{
+               maxWidth: editableStyles.layout.maxWidth,
+               padding: `0 ${editableStyles.layout.containerPadding}`
+             }}>
+          <div className="grid grid-cols-5" 
+               style={{
+                 gap: editableStyles.layout.gridGap.large,
+                 marginBottom: '326px'
+               }}>
             {footerColumns.map((column, index) => (
-              <div key={index} className="flex flex-col items-start gap-2">
-                <div className="[font-family:'Lexend',Helvetica] font-medium text-[#01032699] text-xs tracking-[0] leading-7">
+              <div key={index} className="flex flex-col items-start" style={
+                {
+                  gap: editableStyles.spacing.components.tight
+                }
+                }>
+                <div style={{...titleStyle, color: editableStyles.colors.text.light}}>
                   {column.title}
                 </div>
-                <div className="flex flex-col items-start gap-px w-full">
+                <div className="flex flex-col items-start w-full" style={{gap: '1px'}}>
                   {column.items.map((item, itemIndex) => (
                     <div
                       key={itemIndex}
-                      className="[font-family:'Lexend',Helvetica] font-semibold text-[#010326cc] text-sm tracking-[0] leading-7 whitespace-pre-line"
+                      className="whitespace-pre-line"
+                      style={{...linkStyle, color: editableStyles.colors.text.secondary}}
                     >
                       {item}
                     </div>
@@ -66,21 +90,26 @@ export const FooterSection = () => {
       </div>
       
       {/* Dark Footer Bar - Full Width */}
-      <div className="w-full h-[80px] bg-[#131e32] flex items-center justify-between px-[87px]">
+      <div className="w-full flex items-center justify-between" 
+           style={{
+             height: '80px',
+             backgroundColor: editableStyles.colors.backgrounds.dark,
+             padding: `0 ${editableStyles.spacing.sections.large}`
+           }}>
         {/* Left side - Logo and Copyright */}
-        <div className="flex items-center gap-[76px]">
+        <div className="flex items-center" style={{gap: editableStyles.spacing.sections.large}}>
           <img
             className="w-[132px] h-7"
             alt="CraftCode Logo"
             src="/app/themes/defaultCCTheme/resources/images/logo-color-2.png"
           />
-          <div className="[font-family:'Lexend',Helvetica] font-normal text-sm text-white tracking-[0] leading-7">
+          <div style={{...copyrightStyle, color: 'white'}}>
             Copyright © 2025 | All rights reserved | Part of the Fieldside group
           </div>
         </div>
         
         {/* Right side - Privacy Links */}
-        <div className="[font-family:'Lexend',Helvetica] font-normal text-sm text-white tracking-[0] leading-7">
+        <div style={{...copyrightStyle, color: 'white'}}>
           Privacy statement | Cookie policy
         </div>
       </div>

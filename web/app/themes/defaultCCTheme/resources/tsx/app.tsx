@@ -9,6 +9,7 @@ import { ServicesSection } from './components/ServicesSection';
 import { HeroSection } from './components/HeroSection';
 import { Navigation } from './components/Navigation';
 import { FooterSection } from './screens/CraftcodeHomepage/sections/FooterSection/FooterSection';
+import { CompanyLogoCarrousel } from './components/CompanyLogoCarrousel/CompanyLogoCarrousel';
 
 export const CraftcodeHomepage = (): JSX.Element => {
   return (
@@ -19,6 +20,7 @@ export const CraftcodeHomepage = (): JSX.Element => {
       <SolutionsSection />
       <CallToActionHero />
       <ProjectShowcaseSection />
+      <CompanyLogoCarrousel />
       <CollaborationSection />
       <ImpactHighlightSection />
       <InsightsSection />

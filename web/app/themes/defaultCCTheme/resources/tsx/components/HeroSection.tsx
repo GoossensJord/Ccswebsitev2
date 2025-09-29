@@ -3,32 +3,53 @@ import { Button } from './ui/button';
 import LeftCodeEditor from './LeftCodeEditor';
 import RightTopCodeEditor from './RightCodeEditor';
 import { TerminalWindow } from './TerminalWindow';
+import { createTextStyle, editableStyles } from '../config/editable-styles';
 
 export const HeroSection = (): JSX.Element => {
+  // Define reusable styles
+  const heroTitleStyle = createTextStyle('h1');
+  const heroBodyStyle = createTextStyle('body');
+  const buttonTextStyle = createTextStyle('small');
+
   return (
-    <section className="relative px-4 pb-[119px]">
-      <div className="max-w-7xl mx-auto px-[117px]">
+    <section className="relative" style={{padding: `0 ${editableStyles.layout.containerPadding} ${editableStyles.spacing.sections.large}`}}>
+      <div className="mx-auto" style={{maxWidth: editableStyles.layout.maxWidth, padding: `0 ${editableStyles.spacing.sections.large}`}}>
         <div
-          className="w-full min-h-[1000px] bg-gray-50 rounded-[20px_20px_60px_20px] border border-solid border-[#f0f2f2] p-[54px] relative bg-cover bg-center bg-no-repeat"
+          className="w-full min-h-[1000px] rounded-[20px_20px_60px_20px] border border-solid relative bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage:
-              'url(/app/themes/defaultCCTheme/resources/images/image-85.png)',
+            backgroundColor: editableStyles.colors.backgrounds.light,
+            borderColor: editableStyles.colors.borders.light,
+            padding: editableStyles.spacing.sections.small,
+            backgroundImage: 'url(/app/themes/defaultCCTheme/resources/images/image-85.png)',
           }}
         >
           {/* Hero Content Overlay */}
-          <div className="relative z-20 flex flex-col items-center text-center pt-[88px]">
-            <h1 className="[font-family:'Lexend',Helvetica] font-medium text-[#010326] text-[62px] tracking-[0] leading-[70px] mb-[95px]">
+          <div className="relative z-20 flex flex-col items-center text-center" style={{paddingTop: editableStyles.spacing.sections.large}}>
+            <h1 style={{
+              ...heroTitleStyle,
+              fontSize: '62px',
+              lineHeight: '70px',
+              marginBottom: editableStyles.spacing.sections.large
+            }}>
               Our craftsmanship <br />
               defines your code
             </h1>
-            <p className="w-[798px] [font-family:'Lexend',Helvetica] font-normal text-[#010326cc] text-lg text-center tracking-[0] leading-8 mb-[105px]">
+            <p className="text-center" style={{
+              ...heroBodyStyle,
+              maxWidth: '798px',
+              marginBottom: editableStyles.spacing.sections.large
+            }}>
               From strategic advisory to hands-on development,
               <br />
               we partner with you to create sustainable digital solutions that
               truly make a difference.
             </p>
-            <Button className="bg-[#0156ff] hover:bg-[#0156ff]/90 text-white px-8 py-[26px] h-auto">
-              Get to know us
+            <Button className="h-auto hover:bg-[#0156ff]/90" style={{
+              backgroundColor: editableStyles.colors.brand.primary,
+              color: 'white',
+              padding: editableStyles.components.buttons.primary.padding
+            }}>
+              <span style={buttonTextStyle}>Get to know us</span>
             </Button>
           </div>
 
