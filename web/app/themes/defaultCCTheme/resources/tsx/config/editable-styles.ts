@@ -96,17 +96,12 @@ export const editableStyles = {
 
   // LAYOUT - Edit layout and container settings
   layout: {
-    // Maximum content width
-    maxWidth: "1200px",        // Max content width - EDIT THIS
-    
-    // Container padding
-    containerPadding: "1rem",  // Side padding - EDIT THIS
-    
-    // Grid gaps
+    maxWidth: "100%",        
+    containerPadding: "1rem",  
     gridGap: {
-      small: "1rem",    // Small grid gap - EDIT THIS
-      medium: "2rem",   // Medium grid gap - EDIT THIS  
-      large: "3rem",    // Large grid gap - EDIT THIS
+      small: "1rem", 
+      medium: "2rem",
+      large: "3rem", 
     }
   }
 };
