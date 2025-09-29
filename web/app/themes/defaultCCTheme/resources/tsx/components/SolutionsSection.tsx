@@ -111,7 +111,7 @@ export const SolutionsSection = (): JSX.Element => {
                 <JavaCodeEditor className="left-0 top-0 transform z-20" />
 
                 {/* Terminal Window - Behind, overlapping, slightly rotated right */}
-                <div className="absolute left-24 top-12 w-[357px] h-[241px] bg-white rounded-lg shadow-xl border border-gray-200 transform rotate-1 z-10">
+                <div className="absolute left-72 top-12 w-[357px] h-[241px] bg-white rounded-lg shadow-xl border border-gray-200 transform rotate-1 z-10">
                   <div className="flex items-start bg-gray-100 border-b border-gray-200 rounded-t-lg">
                     <div className="inline-flex items-center gap-2 px-3 py-[11px] rounded-[10px_0px_0px_0px]">
                       <div className="inline-flex items-center gap-1.5">

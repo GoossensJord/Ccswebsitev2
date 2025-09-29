@@ -45,23 +45,21 @@ export const FooterSection = () => {
   const copyrightStyle = createTextStyle('small');
 
   return (
-    <section className="relative w-full">
-      <div className="relative rounded-[20px] border border-solid" 
+    <section className="relative w-full ">
+      <div className="relative rounded-[20px]" 
            style={{
              backgroundColor: editableStyles.colors.backgrounds.light,
-             borderColor: editableStyles.colors.borders.light,
              paddingTop: editableStyles.spacing.sections.small,
-             paddingBottom: '150px'
+
            }}>
         <div className="relative z-10 mx-auto" 
              style={{
                maxWidth: editableStyles.layout.maxWidth,
-               padding: `0 ${editableStyles.layout.containerPadding}`
+               padding: `${editableStyles.layout.containerPadding}`
              }}>
           <div className="grid grid-cols-5" 
                style={{
                  gap: editableStyles.layout.gridGap.large,
-                 marginBottom: '326px'
                }}>
             {footerColumns.map((column, index) => (
               <div key={index} className="flex flex-col items-start" style={

@@ -1,8 +1,8 @@
 export const editableStyles = {
   // TYPOGRAPHY - Easy to edit font settings
   typography: {
-    // Primary font family (used throughout the site)
-    primaryFont: "'Lexend', Helvetica, sans-serif",
+    // Primary font family (used throughout the site) - Now using local Lexend font
+    primaryFont: "'Lexend', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif",
     
     // Heading font sizes (edit these to make headings bigger/smaller)
     headingSizes: {
@@ -76,11 +76,11 @@ export const editableStyles = {
     buttons: {
       primary: {
         backgroundColor: "#0156ff", 
-        textColor: "#ffffff",       
+        textColor: "#ffffff",       // Button text - ALWAYS WHITE
         padding: "1rem 2rem",       
         borderRadius: "0.375rem",   
         fontSize: "1.125rem",       
-        fontWeight: "500",          
+        fontWeight: "bold",         // Button text - ALWAYS BOLD
       }
     },
     
@@ -96,8 +96,18 @@ export const editableStyles = {
 
   // LAYOUT - Edit layout and container settings
   layout: {
-    maxWidth: "100%",        
+    // EDIT THIS: Maximum content width - prevents content from being too wide on large screens
+    maxWidth: "1200px",        
     containerPadding: "1rem",  
+    
+    // Content width breakpoints for different screen sizes
+    responsive: {
+      mobile: "95%",     
+      tablet: "90%",     
+      desktop: "1200px", 
+      wide: "1400px",    
+    },
+    
     gridGap: {
       small: "1rem", 
       medium: "2rem",
@@ -120,6 +130,14 @@ export const getEditableStyle = (path: string) => {
 export const getColor = (colorPath: string) => getEditableStyle(`colors.${colorPath}`);
 export const getSpacing = (spacingPath: string) => getEditableStyle(`spacing.${spacingPath}`);
 export const getTypography = (typePath: string) => getEditableStyle(`typography.${typePath}`);
+
+// Get responsive width for different screen sizes
+export const getResponsiveWidth = (breakpoint?: 'mobile' | 'tablet' | 'desktop' | 'wide') => {
+  if (breakpoint && editableStyles.layout.responsive[breakpoint]) {
+    return editableStyles.layout.responsive[breakpoint];
+  }
+  return editableStyles.layout.maxWidth;
+};
 
 
 export const createTextStyle = (type: 'h1' | 'h2' | 'h3' | 'h4' | 'body' | 'small') => {

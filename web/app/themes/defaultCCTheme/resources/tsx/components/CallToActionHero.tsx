@@ -16,7 +16,7 @@ export const CallToActionHero = (): JSX.Element => {
                padding: `${editableStyles.spacing.sections.large} 0`
              }}>
       <img
-        className="absolute inset-0 w-full h-full object-cover rounded-[20px_20px_60px_20px]"
+        className="absolute inset-0 h-full object-cover rounded-[20px_20px_60px_20px]"
         alt="Mask group"
         src="/app/themes/defaultCCTheme/resources/images/mask-group.png"
       />

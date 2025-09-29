@@ -1,4 +1,5 @@
 @import "tailwindcss" theme(static);
+@import "../styles/fonts.css";
 @source "../views/";
 @source "../../app/";
 
@@ -6,18 +7,73 @@
 body, h1, h2, h3, p, span {
   margin: 0;
   padding: 0;
-  font-family: system-ui, sans-serif;
+  font-family: 'Lexend', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
 }
 .app {
   background: #fff;
   min-height: 100vh;
 }
 
-/* Layout */
+/* Layout - Content Width Constraints */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
+}
+
+/* Additional container classes for flexible content width */
+.max-w-container, .content-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Responsive content widths - prevents content from being too wide */
+@media (max-width: 640px) {
+  .container, .max-w-container, .content-container {
+    max-width: 95%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .container, .max-w-container, .content-container {
+    max-width: 90%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .container, .max-w-container, .content-container {
+    max-width: 1200px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1441px) {
+  .container, .max-w-container, .content-container {
+    max-width: 1400px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Apply content width to main sections automatically */
+section > div:first-child:not(.w-full):not(.max-w-none) {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Override for sections that should be full width */
+.full-width {
+  max-width: none !important;
+  width: 100% !important;
 }
 .flex-between {
   display: flex;
@@ -96,19 +152,25 @@ body, h1, h2, h3, p, span {
   cursor: pointer;
   border-radius: 0.5rem;
   transition: all 0.2s ease;
+  color: white;
+  font-weight: bold;
 }
 .btn-primary {
   background: #2563eb;
-  color: #fff;
+  color: white;
+  font-weight: bold;
   padding: 0.5rem 1.5rem;
 }
 .btn-primary:hover {
   background: #1e4ed8;
+  color: white;
+  font-weight: bold;
 }
 .btn-large {
   padding: 1rem 2rem;
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: bold;
+  color: white;
 }
 .btn-link {
   color: #2563eb;
@@ -116,6 +178,51 @@ body, h1, h2, h3, p, span {
   border: none;
   cursor: pointer;
   padding: 0;
+  font-weight: bold;
+}
+
+/* Global button text styling */
+button {
+  color: white;
+  font-weight: bold;
+}
+
+button span {
+  color: white;
+  font-weight: bold;
+}
+
+/* Ensure all button variants have white bold text */
+.btn, .btn-primary, .btn-large, button[class*="btn"], button {
+  color: white !important;
+  font-weight: bold !important;
+}
+
+.btn *, .btn-primary *, .btn-large *, button[class*="btn"] *, button * {
+  color: white !important;
+  font-weight: bold !important;
+}
+
+/* React Button components - ensure white bold text */
+[role="button"], button[type="button"], button[type="submit"] {
+  color: white !important;
+  font-weight: bold !important;
+}
+
+[role="button"] *, button[type="button"] *, button[type="submit"] * {
+  color: white !important;
+  font-weight: bold !important;
+}
+
+/* Tailwind Button components */
+.bg-blue-600, .bg-blue-500, .bg-\[\#0156ff\] {
+  color: white !important;
+  font-weight: bold !important;
+}
+
+.bg-blue-600 *, .bg-blue-500 *, .bg-\[\#0156ff\] * {
+  color: white !important;
+  font-weight: bold !important;
 }
 
 /* Hero Section */

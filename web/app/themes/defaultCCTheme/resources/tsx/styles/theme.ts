@@ -2,7 +2,7 @@
 export const theme = {
   // Font Families
   fonts: {
-    primary: "'Lexend', Helvetica, sans-serif",
+    primary: "'Lexend', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif",
     craftcode: {
       h1: "var(--craftcode-h1-font-family, 'Lexend', Helvetica, sans-serif)",
       h2: "var(--craftcode-h2-font-family, 'Lexend', Helvetica, sans-serif)",
