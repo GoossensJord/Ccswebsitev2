@@ -3,6 +3,12 @@ import tailwindcss from '@tailwindcss/vite';
 import laravel from 'laravel-vite-plugin'
 import { wordpressPlugin, wordpressThemeJson } from '@roots/vite-plugin';
 
+const mix = require('laravel-mix');
+
+mix.postCss('resources/css/app.css', 'public/css', [
+    require('tailwindcss'),
+])
+
 export default defineConfig({
   base: '/app/themes/defaultCCTheme/public/build/',
   plugins: [
