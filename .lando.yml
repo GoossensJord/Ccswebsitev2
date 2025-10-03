@@ -3,6 +3,8 @@ recipe: wordpress
 config:
   webroot: ./web
   php: '8.2'
+  composer: true
+  
   environment:
     MYSQL_DATABASE: wordpress
     MYSQL_USER: wordpress
