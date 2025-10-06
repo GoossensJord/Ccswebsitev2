@@ -1,4 +1,4 @@
-    <div class="absolute left-8 bottom-32 lg:bottom-40 w-80 bg-white rounded-lg shadow-2xl border border-gray-200 transform -rotate-2 hover:rotate-0 transition-transform duration-500 z-20">
+    <div class="absolute left-8 bottom-32 lg:bottom-40 w-[401px] h-[254px] sm:w-80 sm:h-auto bg-white rounded-lg shadow-2xl border border-gray-200 transform -rotate-2 hover:rotate-0 transition-transform duration-500 z-20">
       <div class="flex items-center justify-between p-3 bg-gray-50 border-b border-gray-200 rounded-t-lg">
         <div class="flex space-x-2">
           <div class="w-3 h-3 rounded-full bg-red-500"></div>

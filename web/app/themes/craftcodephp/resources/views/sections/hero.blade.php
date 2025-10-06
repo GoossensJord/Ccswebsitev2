@@ -1,7 +1,7 @@
 <section class="relative" style="padding: 0;">
   <div class="mx-auto" style="max-width: 1440px; padding: 0;">
     <div
-      class="w-full min-h-[1000px] rounded-[20px_20px_60px_20px] border border-solid relative bg-cover bg-center bg-no-repeat"
+      class="w-full min-h-[1000px] rounded-[20px_20px_60px_20px] border border-solid relative bg-cover bg-center bg-no-repeat overflow-hidden"
       style="
         background-color: #F8F9FB;
         border-color: #E5E7EB;
@@ -35,13 +35,10 @@
           padding: 16px 24px;
         ">
           <span>Get to know us</span>
-        </button>
+        </button>      
       </div>
-
-      @include('sections.LeftCodeEditor')
-      <!-- Code Editors and Terminal would need to be converted to static HTML -->
-      <!-- You'll need to create static HTML versions of LeftCodeEditor, RightTopCodeEditor, and TerminalWindow components -->
-
+        @include('sections.rightCodeEditor')
+        @include('sections.leftCodeEditor')
 
 
       <!-- Background decorative image -->
