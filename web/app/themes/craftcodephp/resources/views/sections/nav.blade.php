@@ -10,11 +10,7 @@
 
         <ul class="flex items-center space-x-8 list-none m-0">
             <li class="group">
-                <button 
-                    class="flex items-center space-x-2 text-gray-800 hover:text-blue-600 transition-colors duration-200"
-                    aria-expanded="false"
-                    aria-haspopup="true"
-                >
+                <a href="#what-we-do" class="flex items-center space-x-2 text-gray-800 hover:text-blue-600 transition-colors duration-200">
                     <span class="text-center whitespace-nowrap">What we do</span>
                     <img
                         class="w-2.5 h-1.5"
@@ -22,15 +18,11 @@
                         aria-hidden="true"
                         src="/app/themes/craftcodephp/resources/images/vector-1.svg"
                     />
-                </button>
+                </a>
             </li>
 
             <li class="group">
-                <button 
-                    class="flex items-center space-x-2 text-gray-800 hover:text-blue-600 transition-colors duration-200"
-                    aria-expanded="false"
-                    aria-haspopup="true"
-                >
+                <a href="#solutions" class="flex items-center space-x-2 text-gray-800 hover:text-blue-600 transition-colors duration-200">
                     <span class="text-center whitespace-nowrap">Solutions</span>
                     <img
                         class="w-2.5 h-1.5"
@@ -38,7 +30,7 @@
                         aria-hidden="true"
                         src="/app/themes/craftcodephp/resources/images/vector-1.svg"
                     />
-                </button>
+                </a>
             </li>
 
             <li>

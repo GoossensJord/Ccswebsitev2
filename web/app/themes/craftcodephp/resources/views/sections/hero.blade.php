@@ -39,6 +39,7 @@
       </div>
         @include('sections.rightCodeEditor')
         @include('sections.leftCodeEditor')
+        @include('sections.zshTerminal')
 
 
       <!-- Background decorative image -->

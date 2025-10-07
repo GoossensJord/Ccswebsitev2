@@ -15,4 +15,5 @@ add_action('wp_enqueue_scripts', 'enqueue_theme_styles');
 
 @include('sections.nav')
 @include('sections.hero')
+@include('sections.services')
 
