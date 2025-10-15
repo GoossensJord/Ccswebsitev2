@@ -43,36 +43,40 @@
     {{-- Solutions Grid --}}
     <div class="grid grid-cols-6 gap-10">
       {{-- First Row: Architecture (2 cols) + Front-end Development (4 cols) --}}
-      <div class="bg-gray-50 border border-solid border-gray-200 p-6 rounded-[40px_20px_20px_20px] col-span-2">
-        <div class="w-full h-[280px] mb-8 flex items-center justify-center">
+      <div class="bg-gray-50 border border-solid border-gray-200 rounded-[40px_20px_20px_20px] col-span-2 overflow-hidden">
+        <div class="w-full h-[280px] mb-8">
           <img
-            class="w-full h-[212px] object-cover"
+            class="w-full h-full object-cover"
             alt="Architecture"
-            src="{{ asset('app/themes/defaultCCTheme/resources/images/group-1000005876.png') }}"
+            src="app/themes/defaultCCTheme/resources/images/group-1000005876.png"
           />
         </div>
-        <h3 class="text-2xl font-bold text-gray-900 mb-4">
-          Architecture
-        </h3>
-        <p class="text-gray-600 leading-relaxed">
-          We design solid foundations that grow with your ambitions. Clear, maintainable and ready for the future.
-        </p>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">
+            Architecture
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            We design solid foundations that grow with your ambitions. Clear, maintainable and ready for the future.
+          </p>
+        </div>
       </div>
 
-      <div class="bg-gray-50 border border-solid border-gray-200 p-6 rounded-[20px] col-span-4">
-        <div class="w-full h-[280px] mb-8 flex items-center justify-center">
+      <div class="bg-gray-50 border border-solid border-gray-200 rounded-[20px] col-span-4 overflow-hidden">
+        <div class="w-full h-[280px] mb-8">
           <img
-            class="w-full h-[275px] object-cover"
+            class="w-full h-full object-cover"
             alt="Front-end Development"
-            src="{{ asset('app/themes/defaultCCTheme/resources/images/frame-73.svg') }}"
+            src="app/themes/defaultCCTheme/resources/images/frame-73.svg"
           />
         </div>
-        <h3 class="text-2xl font-bold text-gray-900 mb-4">
-          Front-end Development
-        </h3>
-        <p class="text-gray-600 leading-relaxed">
-          We craft user interfaces that don't just look good but feel intuitive and responsive. Whether it's a web app, dashboard or customer portal, our front-end developers ensure smooth interactions, accessible experiences and high performance across all devices.
-        </p>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">
+            Front-end Development
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            We craft user interfaces that don't just look good but feel intuitive and responsive. Whether it's a web app, dashboard or customer portal, our front-end developers ensure smooth interactions, accessible experiences and high performance across all devices.
+          </p>
+        </div>
       </div>
 
       {{-- Second Row: Back-end Development (4 cols) + Integration (2 cols) --}}
@@ -179,20 +183,22 @@
         </div>
       </div>
 
-      <div class="bg-gray-50 border border-solid border-gray-200 p-6 rounded-[20px_20px_40px_20px] col-span-2">
-        <div class="w-full h-[280px] mb-8 flex items-center justify-center">
+      <div class="bg-gray-50 border border-solid border-gray-200 rounded-[20px_20px_40px_20px] col-span-2 overflow-hidden">
+        <div class="w-full h-[280px] mb-8">
           <img
-            class="w-full h-[212px] object-cover"
+            class="w-full h-full object-cover"
             alt="Integration"
-            src="{{ asset('app/themes/defaultCCTheme/resources/images/group-1000005874.png') }}"
+            src="app/themes/defaultCCTheme/resources/images/group-1000005874.png"
           />
         </div>
-        <h3 class="text-2xl font-bold text-gray-900 mb-4">
-          Integration
-        </h3>
-        <p class="text-gray-600 leading-relaxed">
-          We connect systems in ways that just work. Smooth, safe and without the usual hassle.
-        </p>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">
+            Integration
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            We connect systems in ways that just work. Smooth, safe and without the usual hassle.
+          </p>
+        </div>
       </div>
     </div>
   </div>
