@@ -1,7 +1,7 @@
 {{-- Call to Action Hero Section --}}
-<section class="relative rounded-[20px_20px_60px_20px]" 
+<section class="relative rounded-[20px_20px_60px_20px] mb-24" 
          style="
-           background-color: #0156ff;
+           background-color: #0039a6;
            margin: 0 1rem;
            padding: 6rem 0;
          ">
@@ -58,4 +58,5 @@
     </button>
   </div>
 </section>
+
 
