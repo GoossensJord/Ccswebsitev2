@@ -18,6 +18,7 @@ add_action('wp_enqueue_scripts', 'enqueue_theme_styles');
 @include('sections.services')
 @include('sections.solutions')
 @include('sections.call-to-action')
-
 @include('sections.collaboration')
+@include('sections.project-showcase')
+
 
