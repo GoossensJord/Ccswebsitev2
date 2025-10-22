@@ -21,5 +21,6 @@ add_action('wp_enqueue_scripts', 'enqueue_theme_styles');
 @include('sections.collaboration')
 @include('sections.project-showcase')
 @include('sections.company-logo-carousel')
+@include('sections.impact-highlights')
 
 
