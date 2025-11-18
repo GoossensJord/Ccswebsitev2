@@ -6,7 +6,7 @@
       {{-- Left Column - Content and Features --}}
       <div style="flex: 1; max-width: 50%; height: 600px; display: flex; flex-direction: column;">
         {{-- Content Section --}}
-        <div style="margin-bottom: 2rem;">
+        <div style="margin-bottom: 2rem; padding-top: 1.5rem;">
           <p style="
             font-family: 'Lexend', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
             font-size: 0.875rem;
@@ -51,7 +51,7 @@
                 <img
                   class="w-4 h-4 mt-0.5 flex-shrink-0"
                   alt="Icon"
-                  src="app/themes/defaultCCTheme/resources/images/group-1000005847.png"
+                  src="/app/themes/craftcodephp/resources/images/group-1000005847.png"
                 />
                 <div class="flex flex-col overflow-hidden">
                   <h3 class="font-lexend font-semibold text-gray-900 leading-tight mb-1" style="font-size: 0.875rem;">
@@ -70,7 +70,7 @@
                 <img
                   class="w-4 h-4 mt-0.5 flex-shrink-0"
                   alt="Icon"
-                  src="app/themes/defaultCCTheme/resources/images/group-1000005849.png"
+                  src="/app/themes/craftcodephp/resources/images/group-1000005849.png"
                 />
                 <div class="flex flex-col overflow-hidden">
                   <h3 class="font-lexend font-semibold text-gray-900 leading-tight mb-1" style="font-size: 0.875rem;">
@@ -92,7 +92,7 @@
                 <img
                   class="w-4 h-4 mt-0.5 flex-shrink-0"
                   alt="Icon"
-                  src="app/themes/defaultCCTheme/resources/images/application-1.svg"
+                  src="/app/themes/craftcodephp/resources/images/application-1.svg"
                 />
                 <div class="flex flex-col overflow-hidden">
                   <h3 class="font-lexend font-semibold text-gray-900 leading-tight mb-1" style="font-size: 0.875rem;">
@@ -111,7 +111,7 @@
                 <img
                   class="w-4 h-4 mt-0.5 flex-shrink-0"
                   alt="Icon"
-                  src="app/themes/defaultCCTheme/resources/images/group-1000005848.png"
+                  src="/app/themes/craftcodephp/resources/images/group-1000005848.png"
                 />
                 <div class="flex flex-col overflow-hidden">
                   <h3 class="font-lexend font-semibold text-gray-900 leading-tight mb-1" style="font-size: 0.875rem;">
@@ -128,7 +128,7 @@
       </div>
 
       {{-- Right Column - Decorative Elements --}}
-      <div class="relative bg-gray-100 rounded-lg" style="flex: 1; max-width: 50%; height: 600px;">
+      <div class="relative bg-gray-100 rounded-lg" style="flex: 1; max-width: 50%; height: 600px; padding-top: 1.5rem;">
         <div class="relative w-full h-full flex items-center justify-center">
           {{-- Each element centered within the container --}}
           <div class="relative flex items-center justify-center" style="width: 370px; height: 370px;">
@@ -136,21 +136,21 @@
               class="absolute"
               style="width: 370px; height: 370px;"
               alt="Ellipse"
-              src="app/themes/defaultCCTheme/resources/images/ellipse-24.svg"
+              src="/app/themes/craftcodephp/resources/images/ellipse-24.svg"
             />
             <div class="relative flex items-center justify-center" style="width: 300px; height: 300px;">
               <img
                 class="absolute"
                 style="width: 300px; height: 300px;"
                 alt="Ellipse"
-                src="app/themes/defaultCCTheme/resources/images/ellipse-23.svg"
+                src="/app/themes/craftcodephp/resources/images/ellipse-23.svg"
               />
               <div class="relative flex items-center justify-center" style="width: 240px; height: 240px;">
                 <img
                   class="absolute"
                   style="width: 240px; height: 240px;"
                   alt="Ellipse"
-                  src="app/themes/defaultCCTheme/resources/images/ellipse-22.svg"
+                  src="/app/themes/craftcodephp/resources/images/ellipse-22.svg"
                 />
                 <div class="relative flex items-center justify-center" style="width: 192px; height: 192px;">
                   <div 
@@ -165,7 +165,7 @@
                     class="relative z-10"
                     style="width: 101px; height: 112px;"
                     alt="Logo color"
-                    src="app/themes/defaultCCTheme/resources/images/logo-color-1.png"
+                    src="/app/themes/craftcodephp/resources/images/logo-color-1.png"
                   />
                 </div>
               </div>

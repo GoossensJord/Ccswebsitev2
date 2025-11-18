@@ -87,7 +87,7 @@
             <img
               class="w-full h-full rounded-2xl object-cover opacity-70"
               alt="CEPA Project"
-              src="/app/themes/defaultCCTheme/resources/images/rectangle-5954.png"
+              src="/app/themes/craftcodephp/resources/images/rectangle-5954.png"
             />
             <!-- Fade overlay for better logo visibility -->
             <div class="absolute inset-0 bg-white bg-opacity-20 rounded-2xl"></div>
@@ -95,7 +95,7 @@
               <img
                 class="w-[50px] h-[19px] drop-shadow-lg"
                 alt="CEPA Logo"
-                src="/app/themes/defaultCCTheme/resources/images/logo.svg"
+                src="/app/themes/craftcodephp/resources/images/logo.svg"
               />
             </div>
           </div>
@@ -144,7 +144,7 @@
             <img
               class="w-full h-full rounded-2xl object-cover opacity-70"
               alt="RBFA Project"
-              src="/app/themes/defaultCCTheme/resources/images/rectangle-5969.png"
+              src="/app/themes/craftcodephp/resources/images/rectangle-5969.png"
             />
             <!-- Fade overlay for better logo visibility -->
             <div class="absolute inset-0 bg-white bg-opacity-20 rounded-2xl"></div>
@@ -152,7 +152,7 @@
               <img
                 class="w-[60px] h-[24px] drop-shadow-lg"
                 alt="RBFA Logo"
-                src="/app/themes/defaultCCTheme/resources/images/kbvb-logo-1.svg"
+                src="/app/themes/craftcodephp/resources/images/kbvb-logo-1.svg"
               />
             </div>
           </div>

@@ -6,9 +6,10 @@
            padding: 6rem 0;
          ">
   <img
-    class="absolute inset-0 h-full object-cover rounded-[20px_20px_60px_20px]"
+    class="absolute inset-0 w-full h-full object-cover rounded-[20px_20px_60px_20px]"
     alt="Mask group"
-    src="app/themes/defaultCCTheme/resources/images/mask-group.png"
+    src="/app/themes/craftcodephp/resources/images/mask-group.png"
+    style="width: 100%; height: 100%; object-fit: cover;"
   />
   <div class="relative z-10 text-center mx-auto" 
        style="

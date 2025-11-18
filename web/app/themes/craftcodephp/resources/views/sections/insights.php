@@ -5,61 +5,62 @@
  */
 ?>
 
-<section class="relative w-full">
-    <div class="relative rounded-[20px]" style="background-color: #f9fafb; padding-top: 6rem;">
-        <!-- Container to center and constrain the blue div -->
-        <div class="w-full flex justify-center">
-            <div class="w-full rounded-[20px_20px_20px_60px] flex items-center justify-between relative overflow-hidden" style="
-                max-width: 1200px;
-                height: 285px;
-                background-color: #0156ff;
-                padding: 0 6rem;
-                margin-left: auto;
-                margin-right: auto;
-            ">
-                <!-- Background Image -->
-                <div class="absolute inset-0 bg-[url(/app/themes/defaultCCTheme/resources/images/image-85.png)] bg-contain bg-bottom bg-right bg-no-repeat opacity-20 z-0"></div>
-                
-                <!-- Content -->
-                <div class="flex flex-col items-start max-w-[822px] relative z-10" style="gap: 1rem;">
-                    <h2 style="
-                        font-family: 'Lexend', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-                        font-size: 3rem;
-                        font-weight: 700;
-                        color: white;
-                        line-height: 1.2;
-                    ">
-                        Let's build the future together
-                    </h2>
-                    <p style="
-                        font-family: 'Lexend', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-                        font-size: 1rem;
-                        font-weight: 400;
-                        color: #ffffffcc;
-                        line-height: 1.6;
-                    ">
-                        Ready to take your digital ambitions to the next level? <br />
-                        Let's collaborate and create something exceptional.
-                    </p>
-                </div>
-                
-                <!-- Button -->
-                <button class="w-[143px] h-auto rounded-md hover:bg-[#0156ff]/90 relative z-10" style="
+<section class="relative rounded-[20px_20px_60px_20px] mb-24"
+         style="
+            background-color: #0039a6;
+            margin: 3rem 1rem 0 1rem;
+            padding: 6rem 0;
+         ">
+    <img
+        class="absolute inset-0 w-full h-full object-cover rounded-[20px_20px_60px_20px]"
+        alt="Mask group"
+        src="/app/themes/craftcodephp/resources/images/mask-group.png"
+        style="width: 100%; height: 100%; object-fit: cover;"
+    />
+    <div class="relative z-10 text-center mx-auto"
+         style="
+            max-width: 896px;
+            padding: 0 1rem;
+         ">
+        <h2 class="lg:text-5xl" style="
+            font-family: 'Lexend', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            font-size: 2.75rem;
+            font-weight: 700;
+            color: white;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        ">
+            Let's build the future together
+        </h2>
+        <p style="
+            font-family: 'Lexend', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            font-size: 1.125rem;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.75;
+            text-align: center;
+            margin: 0 auto 2rem auto;
+        ">
+            Ready to take your digital ambitions to the next level?<br />
+            Let's collaborate and create something exceptional.
+        </p>
+        <button class="hover:bg-[#0156ff]/90 rounded-lg btn-primary"
+                style="
                     background-color: #0156ff;
-                    padding: 16px 24px;
+                    color: white;
+                    font-weight: bold;
+                    padding: 0.75rem 2rem;
+                    border: none;
+                    cursor: pointer;
+                    transition: all 0.2s ease;
                 ">
-                    <span style="
-                        font-family: 'Lexend', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-                        font-size: 0.875rem;
-                        font-weight: 500;
-                        color: white;
-                        line-height: 1.5;
-                    ">
-                        Let's talk
-                    </span>
-                </button>
-            </div>
-        </div>
+            <span style="
+                font-family: 'Lexend', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+                font-size: 0.875rem;
+                font-weight: 500;
+                color: white;
+            ">Let's talk</span>
+        </button>
     </div>
 </section>
 

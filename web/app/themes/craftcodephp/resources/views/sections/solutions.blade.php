@@ -48,7 +48,7 @@
           <img
             class="w-full h-full object-cover"
             alt="Architecture"
-            src="app/themes/defaultCCTheme/resources/images/group-1000005876.png"
+            src="/app/themes/craftcodephp/resources/images/group-1000005876.png"
           />
         </div>
         <div class="p-6">
@@ -66,7 +66,7 @@
           <img
             class="w-full h-full object-cover"
             alt="Front-end Development"
-            src="app/themes/defaultCCTheme/resources/images/frame-73.svg"
+            src="/app/themes/craftcodephp/resources/images/frame-73.svg"
           />
         </div>
         <div class="p-6">
@@ -188,7 +188,7 @@
           <img
             class="w-full h-full object-cover"
             alt="Integration"
-            src="app/themes/defaultCCTheme/resources/images/group-1000005874.png"
+            src="/app/themes/craftcodephp/resources/images/group-1000005874.png"
           />
         </div>
         <div class="p-6">

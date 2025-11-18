@@ -46,7 +46,7 @@
         <article class="relative">
             <div class="relative" style="height: 256px; margin-bottom: 1rem;">
                 <img
-                    src="/app/themes/defaultCCTheme/resources/images/5d1b6da0a293e6d75669eecef0cf7acf66e9da93.png"
+                    src="/app/themes/craftcodephp/resources/images/5d1b6da0a293e6d75669eecef0cf7acf66e9da93.png"
                     alt="Choosing your 2025 tech stack: a pragmatic guide"
                     class="w-full h-full object-cover"
                 />

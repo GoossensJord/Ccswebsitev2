@@ -42,38 +42,38 @@
             </div>
             
             <!-- Top row of company logos -->
-            <div class="grid" style="grid-template-columns: repeat(5, 1fr); gap: 8px; margin-bottom: 8px; transform: translateX(20px);">
+            <div class="grid" style="grid-template-columns: repeat(5, auto); gap: 16px; margin-bottom: 16px; justify-content: center; width: fit-content; margin-left: auto; margin-right: auto;">
                 <div class="flex items-center justify-center" style="background-color: #f9fafb; border: 1px solid #e5e7eb; padding: 16px; width: 296px; height: 148px; border-radius: 12px;">
                     <img
-                        src="/app/themes/defaultCCTheme/resources/images/logo-color.png"
+                        src="/app/themes/craftcodephp/resources/images/logo-color.png"
                         alt="Contribute"
                         class="max-w-full max-h-[60px] object-contain"
                     />
                 </div>
                 <div class="flex items-center justify-center" style="background-color: #f9fafb; border: 1px solid #e5e7eb; padding: 16px; width: 296px; height: 148px; border-radius: 12px;">
                     <img
-                        src="/app/themes/defaultCCTheme/resources/images/logo-color.png"
+                        src="/app/themes/craftcodephp/resources/images/logo-color.png"
                         alt="Royal Belgian Football Association"
                         class="max-w-full max-h-[60px] object-contain"
                     />
                 </div>
                 <div class="flex items-center justify-center" style="background-color: #f9fafb; border: 1px solid #e5e7eb; padding: 16px; width: 296px; height: 148px; border-radius: 12px;">
                     <img
-                        src="/app/themes/defaultCCTheme/resources/images/logo-color.png"
+                        src="/app/themes/craftcodephp/resources/images/logo-color.png"
                         alt="CEPA"
                         class="max-w-full max-h-[60px] object-contain"
                     />
                 </div>
                 <div class="flex items-center justify-center" style="background-color: #f9fafb; border: 1px solid #e5e7eb; padding: 16px; width: 296px; height: 148px; border-radius: 12px;">
                     <img
-                        src="/app/themes/defaultCCTheme/resources/images/logo-color.png"
+                        src="/app/themes/craftcodephp/resources/images/logo-color.png"
                         alt="Proximus"
                         class="max-w-full max-h-[60px] object-contain"
                     />
                 </div>
                 <div class="flex items-center justify-center" style="background-color: #f9fafb; border: 1px solid #e5e7eb; padding: 16px; width: 296px; height: 148px; border-radius: 12px;">
                     <img
-                        src="/app/themes/defaultCCTheme/resources/images/logo-color.png"
+                        src="/app/themes/craftcodephp/resources/images/logo-color.png"
                         alt="UZA"
                         class="max-w-full max-h-[60px] object-contain"
                     />
@@ -81,38 +81,38 @@
             </div>
             
             <!-- Bottom row of company logos -->
-            <div class="grid" style="grid-template-columns: repeat(5, 1fr); gap: 8px; transform: translateX(-20px);">
+            <div class="grid" style="grid-template-columns: repeat(5, auto); gap: 16px; justify-content: center; width: fit-content; margin-left: auto; margin-right: auto;">
                 <div class="flex items-center justify-center" style="background-color: #f9fafb; border: 1px solid #e5e7eb; padding: 16px; width: 296px; height: 148px; border-radius: 12px;">
                     <img
-                        src="/app/themes/defaultCCTheme/resources/images/logo-color.png"
+                        src="/app/themes/craftcodephp/resources/images/logo-color.png"
                         alt="Christelijke Mutualiteit"
                         class="max-w-full max-h-[60px] object-contain"
                     />
                 </div>
                 <div class="flex items-center justify-center" style="background-color: #f9fafb; border: 1px solid #e5e7eb; padding: 16px; width: 296px; height: 148px; border-radius: 12px;">
                     <img
-                        src="/app/themes/defaultCCTheme/resources/images/logo-color.png"
+                        src="/app/themes/craftcodephp/resources/images/logo-color.png"
                         alt="Collibra"
                         class="max-w-full max-h-[60px] object-contain"
                     />
                 </div>
                 <div class="flex items-center justify-center" style="background-color: #f9fafb; border: 1px solid #e5e7eb; padding: 16px; width: 296px; height: 148px; border-radius: 12px;">
                     <img
-                        src="/app/themes/defaultCCTheme/resources/images/logo-color.png"
+                        src="/app/themes/craftcodephp/resources/images/logo-color.png"
                         alt="Johnson & Johnson"
                         class="max-w-full max-h-[60px] object-contain"
                     />
                 </div>
                 <div class="flex items-center justify-center" style="background-color: #f9fafb; border: 1px solid #e5e7eb; padding: 16px; width: 296px; height: 148px; border-radius: 12px;">
                     <img
-                        src="/app/themes/defaultCCTheme/resources/images/logo-color.png"
+                        src="/app/themes/craftcodephp/resources/images/logo-color.png"
                         alt="Randstad"
                         class="max-w-full max-h-[60px] object-contain"
                     />
                 </div>
                 <div class="flex items-center justify-center" style="background-color: #f9fafb; border: 1px solid #e5e7eb; padding: 16px; width: 296px; height: 148px; border-radius: 12px;">
                     <img
-                        src="/app/themes/defaultCCTheme/resources/images/logo-color.png"
+                        src="/app/themes/craftcodephp/resources/images/logo-color.png"
                         alt="Vlaamse Overheid"
                         class="max-w-full max-h-[60px] object-contain"
                     />
